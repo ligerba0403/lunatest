@@ -1,0 +1,203 @@
+{
+  "BuildID": "5b3d0a70-0c38-4512-acaa-b6976425f70d",
+  "Command": "project:deploy",
+  "ProjectID": "9936c67fc0daaa74680ba28fd991c293",
+  "ProjectStateHash": "2ec7aecbfd8f87ed46265fdc70c6a29c2207f1c0a87a60b1a3ae6f260e4e239a",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 0,
+  "StartTime": 1693509505964,
+  "EndTime": 1693509534449,
+  "PlaygroundUserID": 11300,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "playground",
+  "UnityVersion": "2021.3.24f1",
+  "LunaVersion": "5.2.0",
+  "LogCount": 8,
+  "Logs": [
+    {
+      "LogID": "5703dbe3-2915-4022-b148-627e7200f351",
+      "Order": 5,
+      "Timestamp": 1693509534815,
+      "Stage": 3,
+      "ErrorType": 1,
+      "ErrorCode": "LP3006",
+      "Description": "You are not using the Luna API: Playable.InstallFullGame",
+      "Details": [
+        "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+      ],
+      "DescriptionValues": [
+        "Playable",
+        "InstallFullGame"
+      ],
+      "DetailsValues": [
+        "Playable",
+        "InstallFullGame"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "045893fb-bb3c-4491-9a30-b2c3148da42a",
+      "Order": 5,
+      "Timestamp": 1693509534817,
+      "Stage": 3,
+      "ErrorType": 1,
+      "ErrorCode": "LP3006",
+      "Description": "You are not using the Luna API: LifeCycle.GameEnded",
+      "Details": [
+        "You are not using the Luna API: LifeCycle.GameEnded. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+      ],
+      "DescriptionValues": [
+        "LifeCycle",
+        "GameEnded"
+      ],
+      "DetailsValues": [
+        "LifeCycle",
+        "GameEnded"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "a8fb656d-f892-4f29-8360-210ca714cd85",
+      "Order": 5,
+      "Timestamp": 1693509534818,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3007",
+      "Description": "You are not using any custom events",
+      "Details": [
+        "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        ""
+      ],
+      "DetailsValues": [
+        ""
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "2bf258d0-70a8-4f59-a434-5562a10b8da5",
+      "Order": 5,
+      "Timestamp": 1693509534821,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3011",
+      "Description": "You are not using any LunaPlaygroundFields attributes.",
+      "Details": [
+        "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+      ],
+      "DescriptionValues": null,
+      "DetailsValues": null,
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "b4fdff27-03c7-413a-9fe8-f8863273e613",
+      "Order": 0,
+      "Timestamp": 1693509509749,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1006",
+      "Description": "Linear color space is not supported",
+      "Details": [
+        "Due to compatibility reasons, Luna is only able to use Gamma color space for rendering. Please adjust your player settings."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "ef25f8c0-0ac5-4974-94e4-9726bc4e1fc1",
+      "Order": 1,
+      "Timestamp": 1693509509749,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1014",
+      "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+      "Details": [
+        "Navigate to the Runtime Analysis > Code tab to enable code stripping"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "72a7fc13-8058-49a9-bc24-c9db705cd54d",
+      "Order": 2,
+      "Timestamp": 1693509509754,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1032",
+      "Description": "Package(s) is not supported in Luna",
+      "Details": [
+        "Currently package(s) {0} is not supported in the Luna. We recommend you to remove it and workaround it's functionality."
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "com.unity.timeline"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "C:/Users/UMAMI/Desktop/UMAMI-SSD/lunatutoo/Packages\\manifest.json",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "dbdf8286-d5de-4c70-af71-cf231994b726",
+      "Order": 3,
+      "Timestamp": 1693509509755,
+      "Stage": 1,
+      "ErrorType": 2,
+      "ErrorCode": "LP1005",
+      "Description": "Hidden/BlitCopy: Tags: \"LIGHTMODE\"=\"ALWAYS\"\n has problems",
+      "Details": [
+        "Hidden/BlitCopy",
+        "Hidden/Internal-ScreenSpaceShadows",
+        "UI/Default",
+        "Standard",
+        "Legacy Shaders/VertexLit"
+      ],
+      "DescriptionValues": [
+        "Hidden/BlitCopy: Tags: \"LIGHTMODE\"=\"ALWAYS\"\n"
+      ],
+      "DetailsValues": [],
+      "LogCount": 5,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    }
+  ]
+}
