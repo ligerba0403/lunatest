@@ -1,7 +1,7 @@
 {
     "version": "5.2.0",
     "projectId": "9936c67fc0daaa74680ba28fd991c293",
-    "applicationID": 18022,
+    "applicationID": 18023,
     "creativeName": "new-concept",
     "pgServer": "EU",
     "window": {
@@ -18,9 +18,9 @@
             "externalSources": [],
             "externalJSLibraries": [],
             "scriptingDefines": [],
-            "msbuildVersion": "17.4",
+            "msbuildVersion": "17.5",
             "monoVersion": "N/A",
-            "dotnetVersion": "7.0.100"
+            "dotnetVersion": "7.0.202"
         },
         "assets": {
             "export": [],
@@ -98,7 +98,7 @@
                 "forceIncluded": false
             }
         ],
-        "disableRuntimeAnalysisForCode": true,
+        "disableRuntimeAnalysisForCode": false,
         "disableRuntimeAnalysisForShaders": false,
         "useShadersCache": true,
         "preventUpdatingRAListWhenRAIsDisabled": false,

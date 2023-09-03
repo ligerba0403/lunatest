@@ -8,38 +8,63 @@ public class PlayerController : MonoBehaviour
 
     bool isRight = true;
     private Camera mainCamera;
-    private Vector2 screenSize;
-
+    private float minX, maxX, minY, maxY;
+    int countNum = 0;
 
     private void Start()
     {
         mainCamera = Camera.main;
-        screenSize = new Vector2(Screen.width, Screen.height);
+
+        // Kamera sýnýrlarýný hesaplayýn
+        minX = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
+        maxX = mainCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x;
+        minY = mainCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y;
+        maxY = mainCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        Vector3 position = transform.position;
+        position.y = 0f;
+        position.x = transform.position.x;
+        transform.position = position;
+
         if (isRight)
         {
-            transform.Translate(new Vector3(1f, 0f, 0f) * Time.deltaTime);
+            transform.Translate(new Vector3(1f * Time.deltaTime, 0f, 0f));
         }
         else
-            transform.Translate(new Vector3(-1f, 0f, 0f) * Time.deltaTime);
+        {
+            transform.Translate(new Vector3(-1f * Time.deltaTime, 0f, 0f));
+        }  
+        
+        if (Input.touchCount > 0 ) 
+        {
+            onTouch();
+        }
 
         checkPos();
     }
 
     private void checkPos()
     {
-        Vector3 screenPos = mainCamera.WorldToScreenPoint(transform.position);
-        if ()
+        // Nesnenin pozisyonunu alýn
+        Vector3 position = transform.position;
+
+        // Nesnenin pozisyonunu sýnýrlar içinde tutun
+        position.x = Mathf.Clamp(position.x, minX, maxX);
+        position.y = Mathf.Clamp(position.y, minY, maxY);
+
+        if (position.x == minX || position.x == maxX || position.y == minY || position.y == maxY)
         {
-            isRight = !isRight;
+            Debug.Log("Nesne kamera sýnýrlarýna deðdi!");
+            onTouch();
         }
     }
 
-    private void OnMouseDown()
+    private void onTouch()
     {
+        
         isRight = !isRight;
     }
 }

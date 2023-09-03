@@ -16,10 +16,11 @@ public class PlayerEat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("ghost"))
+        if (collision.CompareTag("Ghost"))
         {
             _score += 5;
             score.text = _score.ToString();
+            Destroy(collision.gameObject);
         }
     }
 

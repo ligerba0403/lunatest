@@ -1,0 +1,46 @@
+{
+    "BuildID": "d90d13a5-21ec-4369-a59b-f3d1368bf1b5",
+    "Command": "project:build",
+    "ProjectID": "9936c67fc0daaa74680ba28fd991c293",
+    "ProjectStateHash": "7ddae09a2ff6590753c06fb78a3113b11df5c80fa12d829a953476ed38ab4d3b",
+    "StageCompletedAt": 2,
+    "EarliestFatalError": 0,
+    "StartTime": 1693765017797,
+    "EndTime": 1693765021598,
+    "PlaygroundUserID": 11303,
+    "OperatingSystem": "win32",
+    "TargetPlatform": "develop",
+    "UnityVersion": "2021.3.30f1",
+    "LunaVersion": "5.2.0",
+    "LogCount": 1,
+    "Logs": [
+        {
+            "LogID": "79508337-8924-42d7-8cd3-fd38f543f469",
+            "Timestamp": 1693765021053,
+            "Stage": 1,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1025",
+            "Description": "Unhandled Exception: Method not found: single UnityEngine.Physics2D.get_bounceThreshold()",
+            "Details": [
+                "Exception: System.MissingMethodException : Method not found: single UnityEngine.Physics2D.get_bounceThreshold()",
+                ""
+            ],
+            "DescriptionValues": [
+                "Method not found: single UnityEngine.Physics2D.get_bounceThreshold()"
+            ],
+            "DetailsValues": [
+                "System.MissingMethodException",
+                "Method not found: single UnityEngine.Physics2D.get_bounceThreshold()",
+                "  at Luna.Unity.DTO.UnityEngine.Assets.ProjectSettings..ctor (System.Boolean , System.Boolean , System.Boolean ) [0x00176] in <9a5d9465b03e45f69dfea980228e1402>:0 \r\n  at  . ⁞..ctor (System.Boolean , System.Boolean , System.Boolean ) [0x00020] in <9a5d9465b03e45f69dfea980228e1402>:0 \r\n  at  . ⁚..ctor ( . ⁏ ,  . ⁚+  ) [0x0001a] in <9a5d9465b03e45f69dfea980228e1402>:0 \r\n  at  . ⁏..ctor ( .   , System.Boolean ) [0x00232] in <9a5d9465b03e45f69dfea980228e1402>:0 \r\n  at  .  .  () [0x00038] in <9a5d9465b03e45f69dfea980228e1402>:0 ",
+                ""
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 0
+        }
+    ]
+}
